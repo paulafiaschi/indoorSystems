@@ -1,0 +1,251 @@
+.court {
+  width: 550px;
+  height: 700px;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.half {
+  width: 550px;
+  border-bottom: solid 2px black;
+}
+
+.d {
+  width: 380px;
+  height: 160px;
+  border: solid 2px black;
+}
+
+.d1 {
+  border-radius: 0 0 400px 400px;
+}
+.d2 {
+  border-radius: 400px 400px 0 0;
+}
+
+.defender {
+  background-color: red;
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.attacker {
+  background-color: blue;
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgb(255, 238, 0);
+  height: 20px;
+  width: 20px;
+  top: 190px;
+  left: 440px;
+}
+
+/* Other team */
+
+.gk-red {
+  top: 5px;
+}
+
+.lb-red {
+  top: 150px;
+  left: 450px;
+}
+
+.rb-red {
+  top: 130px;
+  left: 120px;
+}
+
+.c-red {
+  top: 360px;
+  left: 310px;
+}
+.lf-red {
+  top: 580px;
+  left: 450px;
+}
+.rf-red {
+  top: 500px;
+  left: 40px;
+}
+
+/* KH players */
+
+.rf-blue {
+  top: 220px;
+  left: 380px;
+}
+.lf-blue {
+  top: 270px;
+  left: 210px;
+}
+.c-blue {
+  top: 355px;
+  left: 90px;
+}
+.lb-blue {
+  top: 490px;
+  left: 330px;
+}
+.rb-blue {
+  top: 355px;
+  left: 450px;
+}
+
+.gk-blue {
+  top: 650px;
+}
+
+/*  */
+/*  */
+/* animations */
+
+.lib-ball {
+  animation-duration: 20s;
+  animation-name: lib-ball;
+}
+.lib-lf {
+  animation-duration: 20s;
+  animation-name: lib-lf;
+}
+.lib-rf {
+  animation-duration: 20s;
+  animation-name: lib-rf;
+}
+.lib-rb {
+  animation-duration: 20s;
+  animation-name: lib-rb;
+}
+.lib-lb {
+  animation-duration: 20s;
+  animation-name: lib-lb;
+}
+.lib-c {
+  animation-duration: 20s;
+  animation-name: lib-c;
+}
+.lib-rc {
+  animation-duration: 20s;
+  animation-name: lib-rc;
+}
+
+@keyframes lib-ball {
+  0% {
+    top: 190px;
+    left: 440px;
+  }
+
+  25% {
+    top: 180px;
+    left: 130px;
+  }
+
+  50% {
+    top: 300px;
+    left: 10px;
+  }
+}
+
+@keyframes lib-lf {
+  0% {
+    top: 270px;
+    left: 210px;
+  }
+
+  25%,
+  75% {
+    top: 200px;
+    left: 140px;
+  }
+}
+
+@keyframes lib-rf {
+  0%,
+  3% {
+    top: 220px;
+    left: 380px;
+  }
+
+  15% {
+    top: 170px;
+    left: 350px;
+  }
+
+  25%,
+  75% {
+    top: 170px;
+    left: 250px;
+  }
+}
+@keyframes lib-rb {
+  0% {
+    top: 355px;
+    left: 450px;
+  }
+
+  25%,
+  75% {
+    top: 355px;
+    left: 330px;
+  }
+}
+@keyframes lib-lb {
+  0% {
+    top: 490px;
+    left: 330px;
+  }
+
+  25%,
+  75% {
+    top: 470px;
+    left: 150px;
+  }
+}
+@keyframes lib-c {
+  0% {
+    top: 355px;
+    left: 90px;
+  }
+
+  25%,
+  75% {
+    top: 355px;
+    left: 30px;
+  }
+}
+@keyframes lib-rc {
+  0% {
+    top: 360px;
+    left: 310px;
+  }
+
+  25%,
+  75% {
+    top: 350px;
+    left: 240px;
+  }
+}

@@ -1,0 +1,225 @@
+.court {
+  width: 550px;
+  height: 700px;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.half {
+  width: 550px;
+  border-bottom: solid 2px black;
+}
+
+.d {
+  width: 380px;
+  height: 160px;
+  border: solid 2px black;
+}
+
+.d1 {
+  border-radius: 0 0 400px 400px;
+}
+.d2 {
+  border-radius: 400px 400px 0 0;
+}
+
+.defender {
+  background-color: red;
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.attacker {
+  background-color: blue;
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgb(255, 238, 0);
+  height: 20px;
+  width: 20px;
+  top: 220px;
+  left: 440px;
+}
+
+/* Other team */
+
+.gk-red {
+  top: 5px;
+}
+
+.lb-red {
+  top: 180px;
+  left: 450px;
+}
+
+.rb-red {
+  top: 180px;
+  left: 120px;
+}
+
+.c-red {
+  top: 360px;
+  left: 310px;
+}
+.lf-red {
+  top: 460px;
+  left: 400px;
+}
+.rf-red {
+  top: 550px;
+  left: 180px;
+}
+
+/* KH players */
+
+.rf-blue {
+  top: 300px;
+  left: 380px;
+}
+.lf-blue {
+  top: 320px;
+  left: 200px;
+}
+.c-blue {
+  top: 420px;
+  left: 290px;
+}
+.lb-blue {
+  top: 490px;
+  left: 190px;
+}
+.rb-blue {
+  top: 500px;
+  left: 430px;
+}
+
+.gk-blue {
+  top: 650px;
+}
+
+.dice-ball {
+  animation-duration: 10s;
+  animation-name: dice-ball;
+}
+.dice-lf {
+  animation-duration: 10s;
+  animation-name: dice-lf;
+}
+.dice-rf {
+  animation-duration: 10s;
+  animation-name: dice-rf;
+}
+.dice-rb {
+  animation-duration: 10s;
+  animation-name: dice-rb;
+}
+.dice-lb {
+  animation-duration: 10s;
+  animation-name: dice-lb;
+}
+.dice-c {
+  animation-duration: 10s;
+  animation-name: dice-c;
+}
+
+@keyframes dice-ball {
+  0%,
+  50% {
+    left: 440px;
+  }
+
+  25%,
+  75% {
+    left: 150px;
+  }
+}
+
+@keyframes dice-lf {
+  0%,
+  50% {
+    top: 320px;
+    left: 200px;
+  }
+
+  25%,
+  75% {
+    top: 300px;
+    left: 150px;
+  }
+}
+
+@keyframes dice-rf {
+  0%,
+  50% {
+    top: 300px;
+    left: 380px;
+  }
+
+  25%,
+  75% {
+    top: 330px;
+    left: 340px;
+  }
+}
+@keyframes dice-rb {
+  0%,
+  50% {
+    top: 500px;
+    left: 430px;
+  }
+
+  25%,
+  75% {
+    top: 520px;
+    left: 350px;
+  }
+}
+@keyframes dice-lb {
+  0%,
+  50% {
+    top: 490px;
+    left: 190px;
+  }
+
+  25%,
+  75% {
+    top: 480px;
+    left: 80px;
+  }
+}
+@keyframes dice-c {
+  0%,
+  50% {
+    top: 420px;
+    left: 290px;
+  }
+
+  25%,
+  75% {
+    top: 420px;
+    left: 250px;
+  }
+}
