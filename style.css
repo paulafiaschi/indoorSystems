@@ -96,3 +96,17 @@ button {
 .material-symbols-outlined {
   font-size: 30px;
 }
+
+.d-none {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body * {
+    display: none;
+  }
+
+  .d-none {
+    display: block !important;
+  }
+}
