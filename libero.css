@@ -1,5 +1,5 @@
 .court {
-  width: 550px;
+  width: 500px;
   height: 700px;
   border: solid 2px black;
   display: flex;
@@ -10,7 +10,7 @@
 }
 
 .half {
-  width: 550px;
+  width: 500px;
   border-bottom: solid 2px black;
 }
 
@@ -60,8 +60,8 @@
   background-color: rgb(255, 238, 0);
   height: 20px;
   width: 20px;
-  top: 190px;
-  left: 440px;
+  top: 200px;
+  left: 420px;
 }
 
 /* Other team */
@@ -72,122 +72,126 @@
 
 .lb-red {
   top: 150px;
-  left: 450px;
+  left: 420px;
 }
 
 .rb-red {
   top: 130px;
-  left: 120px;
+  left: 90px;
 }
 
 .c-red {
   top: 360px;
-  left: 310px;
+  left: 280px;
 }
 .lf-red {
   top: 580px;
-  left: 450px;
+  left: 420px;
 }
 .rf-red {
   top: 500px;
-  left: 40px;
+  left: 20px;
 }
 
-/* KH players */
+/* KH players - Left side pressure */
 
 .rf-blue {
-  top: 220px;
-  left: 380px;
+  top: 240px;
+  left: 360px;
 }
 .lf-blue {
   top: 270px;
-  left: 210px;
+  left: 190px;
 }
 .c-blue {
   top: 355px;
-  left: 90px;
+  left: 60px;
 }
 .lb-blue {
   top: 490px;
-  left: 330px;
+  left: 300px;
 }
 .rb-blue {
   top: 355px;
-  left: 450px;
+  left: 420px;
 }
 
 .gk-blue {
   top: 650px;
 }
 
-/*  */
-/*  */
 /* animations */
 
-.lib-ball {
-  animation-duration: 20s;
-  animation-name: lib-ball;
-}
-.lib-lf {
-  animation-duration: 20s;
-  animation-name: lib-lf;
-}
-.lib-rf {
-  animation-duration: 20s;
-  animation-name: lib-rf;
-}
-.lib-rb {
-  animation-duration: 20s;
-  animation-name: lib-rb;
-}
-.lib-lb {
-  animation-duration: 20s;
-  animation-name: lib-lb;
-}
-.lib-c {
-  animation-duration: 20s;
-  animation-name: lib-c;
-}
-.lib-rc {
-  animation-duration: 20s;
-  animation-name: lib-rc;
+.paused {
+  animation-play-state: paused;
 }
 
-@keyframes lib-ball {
+/* Left side pressure */
+
+.lib1-ball {
+  animation-duration: 10s;
+  animation-name: lib1-ball;
+}
+.lib1-lf {
+  animation-duration: 10s;
+  animation-name: lib1-lf;
+}
+.lib1-rf {
+  animation-duration: 10s;
+  animation-name: lib1-rf;
+}
+.lib1-rb {
+  animation-duration: 10s;
+  animation-name: lib1-rb;
+}
+.lib1-lb {
+  animation-duration: 10s;
+  animation-name: lib1-lb;
+}
+.lib1-c {
+  animation-duration: 10s;
+  animation-name: lib1-c;
+}
+.lib1-rc {
+  animation-duration: 10s;
+  animation-name: lib1-rc;
+}
+
+@keyframes lib1-ball {
   0% {
-    top: 190px;
+    top: 200px;
     left: 440px;
   }
 
   25% {
     top: 180px;
-    left: 130px;
+    left: 120px;
   }
 
-  50% {
+  100% {
     top: 300px;
     left: 10px;
   }
 }
 
-@keyframes lib-lf {
+@keyframes lib1-lf {
   0% {
     top: 270px;
-    left: 210px;
+    left: 190px;
   }
 
-  25%,
-  75% {
+  50%,
+  100% {
     top: 200px;
-    left: 140px;
+    left: 130px;
   }
 }
 
-@keyframes lib-rf {
+@keyframes lib1-rf {
   0%,
   3% {
-    top: 220px;
-    left: 380px;
+    top: 240px;
+    left: 360px;
   }
 
   15% {
@@ -195,56 +199,215 @@
     left: 350px;
   }
 
-  25%,
-  75% {
+  35%,
+  100% {
     top: 170px;
     left: 250px;
   }
 }
-@keyframes lib-rb {
+@keyframes lib1-rb {
   0% {
     top: 355px;
-    left: 450px;
+    left: 420px;
   }
 
-  25%,
-  75% {
+  75%,
+  100% {
     top: 355px;
     left: 330px;
   }
 }
-@keyframes lib-lb {
+@keyframes lib1-lb {
   0% {
     top: 490px;
-    left: 330px;
+    left: 300px;
   }
 
-  25%,
-  75% {
+  75%,
+  100% {
     top: 470px;
-    left: 150px;
+    left: 130px;
   }
 }
-@keyframes lib-c {
+@keyframes lib1-c {
   0% {
     top: 355px;
-    left: 90px;
+    left: 60px;
   }
 
-  25%,
-  75% {
-    top: 355px;
-    left: 30px;
+  75%,
+  100% {
+    top: 315px;
+    left: 10px;
   }
 }
-@keyframes lib-rc {
+@keyframes lib1-rc {
   0% {
     top: 360px;
     left: 310px;
   }
 
-  25%,
-  75% {
+  100% {
+    top: 350px;
+    left: 240px;
+  }
+}
+
+/* Right side pressure  */
+
+/* KH players - Right side pressure */
+
+.right-ball {
+  top: 180px;
+  left: 110px;
+}
+
+.right-rf-blue {
+  top: 270px;
+  left: 280px;
+}
+.right-lf-blue {
+  top: 240px;
+  left: 120px;
+}
+.right-c-blue {
+  top: 355px;
+  left: 30px;
+}
+.right-lb-blue {
+  top: 460px;
+  left: 200px;
+}
+.right-rb-blue {
+  top: 355px;
+  left: 360px;
+}
+
+.lib2-ball {
+  animation-duration: 10s;
+  animation-name: lib2-ball;
+}
+.lib2-lf {
+  animation-duration: 10s;
+  animation-name: lib2-lf;
+}
+.lib2-rf {
+  animation-duration: 10s;
+  animation-name: lib2-rf;
+}
+.lib2-rb {
+  animation-duration: 10s;
+  animation-name: lib2-rb;
+}
+.lib2-lb {
+  animation-duration: 10s;
+  animation-name: lib2-lb;
+}
+.lib2-c {
+  animation-duration: 10s;
+  animation-name: lib2-c;
+}
+.lib2-rc {
+  animation-duration: 10s;
+  animation-name: lib2-rc;
+}
+
+@keyframes lib2-ball {
+  0% {
+    top: 180px;
+    left: 110px;
+  }
+
+  25% {
+    top: 195px;
+    left: 410px;
+  }
+
+  75%,
+  100% {
+    top: 300px;
+    left: 450px;
+  }
+}
+
+@keyframes lib2-rf {
+  0% {
+    top: 270px;
+    left: 280px;
+  }
+
+  50%,
+  100% {
+    top: 220px;
+    left: 370px;
+  }
+}
+
+@keyframes lib2-lf {
+  0%,
+  3% {
+    top: 240px;
+    left: 120px;
+  }
+  15% {
+    top: 240px;
+    left: 160px;
+  }
+
+  25% {
+    top: 200px;
+    left: 190px;
+  }
+
+  50%,
+  100% {
+    top: 180px;
+    left: 250px;
+  }
+}
+@keyframes lib2-rb {
+  0% {
+    top: 355px;
+    left: 360px;
+  }
+
+  75%,
+  100% {
+    top: 345px;
+    left: 440px;
+  }
+}
+@keyframes lib2-lb {
+  0% {
+    top: 460px;
+    left: 200px;
+  }
+
+  75%,
+  100% {
+    top: 440px;
+    left: 250px;
+  }
+}
+@keyframes lib2-c {
+  0% {
+    top: 355px;
+    left: 30px;
+  }
+
+  75%,
+  100% {
+    top: 355px;
+    left: 110px;
+  }
+}
+@keyframes lib2-rc {
+  0% {
+    top: 360px;
+    left: 310px;
+  }
+
+  100% {
     top: 350px;
     left: 240px;
   }
