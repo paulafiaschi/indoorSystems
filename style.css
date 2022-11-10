@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+img {
+  max-width: 400px;
+}
+
+.home {
+  flex-direction: column;
+}
+
+.systems {
+  display: flex;
+  gap: 1rem;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.goback {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+
+.systems a {
+  min-width: 200px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid 2px rgb(8, 17, 121);
+  text-align: center;
+  color: rgb(8, 17, 121);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(8, 17, 121);
+}
+.systems a:hover {
+  background-color: rgb(8, 17, 121);
+  color: white;
+}
+a:visited {
+  color: inherit;
+}
+
+.controls div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  justify-content: center;
+}
+
+button {
+  color: rgb(8, 17, 121);
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.controls div:first-child button {
+  min-width: 200px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid 2px rgb(8, 17, 121);
+}
+.controls div:first-child button:hover {
+  background-color: rgb(8, 17, 121);
+  color: white;
+}
+
+.controls div:last-child button {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: solid 2px rgb(8, 17, 121);
+}
+
+.controls div:last-child button:hover {
+  background-color: rgb(8, 17, 121);
+  color: white;
+}
+
+.selected {
+  background-color: rgb(8, 17, 121);
+  color: white;
+}
+.material-symbols-outlined {
+  font-size: 30px;
+}

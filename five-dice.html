@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KH- Indoor</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="five-dice.css">
 </head>
 
 <body>
-  <button class="startDice">start</button>
-  <button class="stopDice">stop</button>
-
   <div class="court">
     <div class="d d1"></div>
     <div class="half"></div>
@@ -35,10 +35,29 @@
 
   </div>
 
+  <a href="index.html" class="goback"><span class="material-symbols-outlined">
+      arrow_back
+    </span></a>
+
+  <div class="controls">
+    <div>
+      <button class="startDice">Restart Dice</button>
+
+    </div>
+    <div>
+      <button class="play"><span class="material-symbols-outlined">
+          play_arrow
+        </span></button>
+      <button class="pause"><span class="material-symbols-outlined">
+          pause
+        </span></button>
+
+    </div>
+  </div>
 
 
 
-  <script src="dice.js"></script>
 </body>
+<script src="dice.js"></script>
 
 </html>

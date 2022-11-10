@@ -12,6 +12,8 @@ const blueRightF = document.querySelector(".rf-blue");
 
 const ball = document.querySelector(".ball");
 
+startLiberoLeft();
+
 document.querySelector(".startLibLeft").addEventListener("click", startLiberoLeft);
 document.querySelector(".startLibRight").addEventListener("click", startLiberoRight);
 document.querySelector(".startLibLeft").addEventListener("animationend", stopLibero);
@@ -38,6 +40,9 @@ function startLiberoLeft() {
   blueC.classList.add("attacker", "c-blue");
   redC.classList.add("defender", "c-red");
 
+  document.querySelector(".startLibRight").classList.remove("selected");
+  document.querySelector(".startLibLeft").classList.add("selected");
+
   this.offsetHeight;
   ball.classList.add("lib1-ball");
   blueLeftF.classList.add("lib1-lf");
@@ -46,7 +51,11 @@ function startLiberoLeft() {
   blueLeftB.classList.add("lib1-lb");
   blueC.classList.add("lib1-c");
   redC.classList.add("lib1-rc");
+
   pauseAnimation();
+
+  document.querySelector(".pause").classList.remove("selected");
+  document.querySelector(".play").classList.remove("selected");
 }
 
 function startLiberoRight() {
@@ -68,6 +77,9 @@ function startLiberoRight() {
   blueC.classList.add("attacker", "right-c-blue");
   redC.classList.add("defender", "c-red");
 
+  document.querySelector(".startLibLeft").classList.remove("selected");
+  document.querySelector(".startLibRight").classList.add("selected");
+
   pauseAnimation();
 
   ball.classList.add("lib2-ball");
@@ -77,6 +89,9 @@ function startLiberoRight() {
   blueLeftB.classList.add("lib2-lb");
   blueC.classList.add("lib2-c");
   redC.classList.add("lib2-rc");
+
+  document.querySelector(".pause").classList.remove("selected");
+  document.querySelector(".play").classList.remove("selected");
 }
 
 function stopLibero() {
@@ -101,6 +116,8 @@ function stopLibero() {
 }
 
 function pauseAnimation() {
+  document.querySelector(".play").classList.remove("selected");
+  document.querySelector(".pause").classList.add("selected");
   ball.classList.add("paused");
   blueLeftF.classList.add("paused");
   blueRightF.classList.add("paused");
@@ -110,6 +127,9 @@ function pauseAnimation() {
   redC.classList.add("paused");
 }
 function resumeAnimation() {
+  document.querySelector(".play").classList.add("selected");
+  document.querySelector(".pause").classList.remove("selected");
+
   ball.classList.remove("paused");
   blueLeftF.classList.remove("paused");
   blueRightF.classList.remove("paused");

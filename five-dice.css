@@ -120,6 +120,11 @@
   top: 650px;
 }
 
+/* animations */
+.paused {
+  animation-play-state: paused;
+}
+
 .dice-ball {
   animation-duration: 10s;
   animation-name: dice-ball;
